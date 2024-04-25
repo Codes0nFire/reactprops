@@ -4,7 +4,7 @@ import Second from './Second'
 const Third = (props) => {
   return (
     <div>
-     <h1>Third Component {props.value}</h1>
+   {props.children}
     </div>
   )
 }

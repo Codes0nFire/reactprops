@@ -5,6 +5,7 @@ import './App.css'
 import First from './Components/First'
 import Second from './Components/Second'
 import Third from './Components/Third'
+import New from './Components/New'
 
 function App() {
   const [count, setCount] = useState(20);
@@ -17,7 +18,10 @@ function App() {
 
      <Second value={run} />
 
-     <Third value={dance} />
+     <Third>
+      <New />
+     </Third>
+      {/* Third is higher order Componet */}
     </>
   )
 }
